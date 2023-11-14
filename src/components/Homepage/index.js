@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 import heroImage from "@/images/hero-img.png"
 import Image from 'next/image';
 import styles from "./homepage.module.scss";
@@ -6,6 +7,7 @@ import { useTranslation } from 'next-i18next'
 import Link from "next/link";
 import { useRouter } from 'next/router';
 import cx from 'classnames'
+import axios from 'axios';
 import Head from 'next/head'; // Import the Head component
 
 const HeroSection = () => {
