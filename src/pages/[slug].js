@@ -17,7 +17,7 @@ export default function Admin({ product, category }) {
 
 export async function getServerSideProps(context) {
   const { locale } = context;
-  const response = await axios.get('/api/getData/product');
+  const response = await axios.get('https://shopping-snaptech.vercel.app/api/getData/product');
   const products = response.data.result;
 
   const translateProducts = await Promise.all(
