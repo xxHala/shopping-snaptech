@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.mainContent {
+    -webkit-text-size-adjust: 100%;
+    --rem: 16;
+    -webkit-font-smoothing: antialiased;
+    color: #202020;
+    font-family: merlo, georgia, serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    box-sizing: inherit;
+    scroll-margin-top: 108px;
+    margin-bottom: 683px;
+    z-index: 2;
+    background-color: white;
+    max-height: 550px;
+}
+
+.container {
+    min-height: 80vh;
+}

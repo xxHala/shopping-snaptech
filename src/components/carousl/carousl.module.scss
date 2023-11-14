@@ -1,0 +1,38 @@
+.carousel {
+  background-color: #f9f9f9;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  -webkit-text-size-adjust: 100%;
+  --rem: 16;
+  -webkit-font-smoothing: antialiased;
+  color: #202020;
+  font-family: merlo, georgia, serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  box-sizing: inherit;
+  list-style-type: none;
+  margin: 100px 0 0;
+
+
+  >div {
+    -webkit-text-size-adjust: 100%;
+    --rem: 16;
+    -webkit-font-smoothing: antialiased;
+    color: #202020;
+    font-family: merlo, georgia, serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    list-style-type: none;
+    box-sizing: inherit;
+    margin: 0 auto;
+    max-width: 1420px;
+    padding: 0 85px;
+    position: relative;
+  }
+}
+
+.category_wrapp {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}

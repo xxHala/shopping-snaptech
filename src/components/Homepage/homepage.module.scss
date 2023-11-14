@@ -1,0 +1,212 @@
+.Hero_root {
+  -webkit-text-size-adjust: 100%;
+  --rem: 16;
+  -webkit-font-smoothing: antialiased;
+  color: #202020;
+  font-family: merlo, georgia, serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  list-style-type: none;
+  box-sizing: inherit;
+  margin: 0 auto;
+  max-width: 1420px;
+}
+
+.Hero_image {
+  -webkit-text-size-adjust: 100%;
+  --rem: 16;
+  -webkit-font-smoothing: antialiased;
+  color: #202020;
+  font-family: merlo, georgia, serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  list-style-type: none;
+  box-sizing: inherit;
+  margin-bottom: 6px;
+}
+
+.Image_wrap {
+  -webkit-text-size-adjust: 100%;
+  --rem: 16;
+  -webkit-font-smoothing: antialiased;
+  color: #202020;
+  font-family: merlo, georgia, serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  list-style-type: none;
+  box-sizing: inherit;
+  background: #f1f1f1;
+
+  img {
+    color: #202020;
+    font-family: merlo, georgia, serif;
+    font-size: 14px;
+    box-sizing: inherit;
+    border: 0;
+    opacity: 1;
+    display: block;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 3200 / 1400;
+    opacity: 1;
+    transition: none;
+  }
+}
+
+.ar {
+  direction: rtl;
+  text-align: right;
+}
+
+.Hero_text {
+  -webkit-text-size-adjust: 100%;
+  --rem: 16;
+  -webkit-font-smoothing: antialiased;
+  color: #202020;
+  font-family: merlo, georgia, serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  list-style-type: none;
+  box-sizing: inherit;
+  display: flex;
+
+  &.ar {
+    justify-content: space-between;
+  }
+}
+
+.Hero_title {
+  -webkit-text-size-adjust: 100%;
+  --rem: 16;
+  -webkit-font-smoothing: antialiased;
+  list-style-type: none;
+  box-sizing: inherit;
+  margin: 0 0 12px;
+  font-family: merlo, georgia, serif;
+  font-size: 60px;
+  letter-spacing: -3.5px;
+  line-height: 82px;
+  margin-bottom: 6px;
+  color: rgb(32, 32, 32);
+
+  &.ar {
+    flex-direction: row-reverse;
+  }
+}
+
+.Hero_subtitle {
+  -webkit-text-size-adjust: 100%;
+  --rem: 16;
+  -webkit-font-smoothing: antialiased;
+  list-style-type: none;
+  box-sizing: inherit;
+  font-family: ov-gothic, HelveticaNeue-Bold, Helvetica Neue Bold, Helvetica Neue, arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: .1px;
+  line-height: 25px;
+  margin: 0 72px 0 0;
+  color: rgb(32, 32, 32);
+
+  &.ar {
+    margin: 0;
+  }
+}
+
+.Hero_ctas {
+  -webkit-text-size-adjust: 100%;
+  --rem: 16;
+  -webkit-font-smoothing: antialiased;
+  color: #202020;
+  font-family: merlo, georgia, serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  list-style-type: none;
+  box-sizing: inherit;
+  align-items: flex-end;
+  display: flex;
+  margin-left: auto;
+  padding-bottom: 24px;
+
+  &.ar {
+    margin-left: unset;
+  }
+}
+
+.Hero_cta {
+  -webkit-text-size-adjust: 100%;
+  --rem: 16;
+  -webkit-font-smoothing: antialiased;
+  color: #202020;
+  font-family: merlo, georgia, serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  list-style-type: none;
+  box-sizing: inherit;
+  margin-left: 24px;
+  min-width: 190px;
+}
+
+.Button_root {
+  -webkit-text-size-adjust: 100%;
+  --rem: 16;
+  -webkit-font-smoothing: antialiased;
+  list-style-type: none;
+  box-sizing: inherit;
+  background: #202020;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ov-gothic, HelveticaNeue-Bold, Helvetica Neue Bold, sans-serif;
+  font-size: 16px;
+  position: relative;
+  text-decoration: none;
+  transition: background .2s ease-in-out, color .2s ease-in-out;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  border-radius: 24px;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 36px;
+}
+
+
+.carousel {
+  background-color: #f9f9f9;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  -webkit-text-size-adjust: 100%;
+  --rem: 16;
+  -webkit-font-smoothing: antialiased;
+  color: #202020;
+  font-family: merlo, georgia, serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  box-sizing: inherit;
+  list-style-type: none;
+  margin: 100px 0 0;
+
+
+  >div {
+    -webkit-text-size-adjust: 100%;
+    --rem: 16;
+    -webkit-font-smoothing: antialiased;
+    color: #202020;
+    font-family: merlo, georgia, serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    list-style-type: none;
+    box-sizing: inherit;
+    margin: 0 auto;
+    max-width: 1420px;
+    padding: 0 85px;
+    position: relative;
+  }
+}
+
+.category_wrapp {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}

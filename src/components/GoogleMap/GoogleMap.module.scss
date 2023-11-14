@@ -1,0 +1,31 @@
+.title {
+  color: #202020;
+  line-height: 1.42857;
+  text-align: left;
+  box-sizing: inherit;
+  display: flex;
+  font-family: merlo, georgia, serif;
+  font-size: 36px;
+  letter-spacing: -1.52px;
+  margin-top: 100px;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+.mapWrapper {
+  text-align: center;
+
+  p {
+    text-align: left;
+    box-sizing: inherit;
+    align-items: center;
+    color: #737373;
+    display: flex;
+    font-family: ov-gothic, HelveticaNeue-Bold, Helvetica Neue Bold, Helvetica Neue, arial, sans-serif;
+    font-size: 13px;
+    justify-content: center;
+    line-height: 15px;
+    margin-bottom: 18px;
+    width: 100%;
+  }
+}

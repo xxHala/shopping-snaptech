@@ -1,0 +1,37 @@
+.gridContainer {
+  color: #202020;
+  font-family: merlo, georgia, serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  box-sizing: inherit;
+  display: flex;
+  flex: 1 1;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-basis: 30%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 5px #ccc;
+  padding-bottom: 50px;
+  transition: .5s ease;
+
+  &:hover {
+    box-shadow:
+      1px 1px #373737,
+      2px 2px #373737,
+      3px 3px #373737,
+      4px 4px #373737,
+      5px 5px #373737,
+      6px 6px #373737;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: .5s ease;
+  }
+}

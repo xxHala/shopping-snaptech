@@ -1,0 +1,27 @@
+.g {
+  color: #202020;
+  font-family: merlo, georgia, serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  box-sizing: inherit;
+  display: flex;
+  justify-content: center;
+  max-width: 1656px;
+  padding: 0 60px;
+  margin: 60px 0;
+
+  >div {
+    color: #202020;
+    font-family: merlo, georgia, serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    box-sizing: inherit;
+    min-width: 66.6666666667%;
+    display: flex;
+    flex: 1 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+}
