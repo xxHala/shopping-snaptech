@@ -6,8 +6,6 @@ import { useTranslation } from 'next-i18next'
 import Link from "next/link";
 import { useRouter } from 'next/router';
 import cx from 'classnames'
-import { useEffect, useState } from 'react';
-import axios from 'axios';
 import Head from 'next/head'; // Import the Head component
 
 const HeroSection = () => {

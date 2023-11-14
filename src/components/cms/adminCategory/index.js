@@ -15,7 +15,7 @@ const CategoryTable = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get('/api/getData/category/');
+      const response = await axios.get('https://shopping-snaptech.vercel.app/api/getData/category/');
       setCategories(response.data.result);
     } catch (error) {
       console.error('Error fetching categories:', error);
@@ -24,7 +24,7 @@ const CategoryTable = () => {
 
   const handleAddCategory = async () => {
     try {
-      const response = await axios.post('/api/addData/category/', newCategory);
+      const response = await axios.post('https://shopping-snaptech.vercel.app/api/addData/category/', newCategory);
       setNewCategory({ title: '' });
       fetchCategories();
       setSuccessMessage('Category added successfully.');
@@ -36,7 +36,7 @@ const CategoryTable = () => {
   const handleDeleteCategory = async (id) => {
 
     try {
-      await axios.delete(`/api/deleteData/category?id=${id}`);
+      await axios.delete(`https://shopping-snaptech.vercel.app/api/deleteData/category?id=${id}`);
       fetchCategories();
       setShowDeleteConfirmation(null);
       setSuccessMessage('Category deleted successfully.');

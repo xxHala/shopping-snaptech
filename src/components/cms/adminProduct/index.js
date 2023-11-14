@@ -16,7 +16,7 @@ const ProductTable = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('/api/getData/product/');
+      const response = await axios.get('https://shopping-snaptech.vercel.app/api/getData/product/');
       setProducts(response.data.result);
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -25,7 +25,7 @@ const ProductTable = () => {
 
   const handleAddProduct = async () => {
     try {
-      const response = await axios.post('/api/addData/product/', newProduct);
+      const response = await axios.post('https://shopping-snaptech.vercel.app/api/addData/product/', newProduct);
       setNewProduct({ title: '', price: '', description: '', image: '', category: '' });
       fetchProducts();
       setSuccessMessage('Product added successfully.');
@@ -37,7 +37,7 @@ const ProductTable = () => {
   const handleUpdateProduct = async () => {
     const updatedProduct = products.find((product) => product.id === editProductId);
     try {
-      await axios.post(`/api/updateData/product?id=${editProductId}`, updatedProduct);
+      await axios.post(`https://shopping-snaptech.vercel.app/api/updateData/product?id=${editProductId}`, updatedProduct);
       fetchProducts();
       setSuccessMessage('Product Updated successfully.');
       setEditProductId(null);

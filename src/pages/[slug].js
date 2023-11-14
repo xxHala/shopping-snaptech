@@ -17,7 +17,7 @@ export default function Admin({ product, category }) {
 
 export async function getServerSideProps(context) {
   const { locale } = context;
-  const response = await axios.get('http://localhost:3000/api/getData/product');
+  const response = await axios.get('/api/getData/product');
   const products = response.data.result;
 
   const translateProducts = await Promise.all(
@@ -32,7 +32,7 @@ export async function getServerSideProps(context) {
     })
   );
 
-  const cat_response = await axios.get('http://localhost:3000/api/getData/category');
+  const cat_response = await axios.get('https://shopping-snaptech.vercel.app/api/getData/category');
 
   const category = cat_response.data.result;
   const translateCategory = await Promise.all(

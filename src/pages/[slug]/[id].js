@@ -28,7 +28,7 @@ export default function Main({ cardData }) {
 
 export async function getServerSideProps(context) {
   const { locale, query } = context;
-  const response = await axios.get(`http://localhost:3000/api/getData/product?category=${query.id}`);
+  const response = await axios.get(`https://shopping-snaptech.vercel.app/api/getData/product?category=${query.id}`);
   return {
     props: {
       cardData: (response.data.result).length !== 0 ? { ...response.data } : { query },
