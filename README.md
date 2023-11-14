@@ -1,8 +1,5 @@
 Varcel \Link : https://shopping-snaptech-a6exfy7ta-hala-hasans-projects.vercel.app
 
-varcel bug with locals: 
-https://github.com/vercel/next.js/issues/54765
-
 ```markdown
 # Shopping Application
 

@@ -20,7 +20,7 @@ export default function Main({ cardData }) {
         )))}
       </div><div>
         {query && (
-          <Details {...query} />
+          <Details {...query} product={true} />
         )}
       </div></>
   );

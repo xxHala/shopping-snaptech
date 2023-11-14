@@ -16,7 +16,6 @@
   }
 }
 
-
 button {
   background-color: #000;
 }
@@ -33,34 +32,34 @@ body {
   margin: 0 5px;
 }
 
-.switch>span {
+.switch > span {
   position: absolute;
   top: 14px;
   pointer-events: none;
-  font-family: 'Helvetica', Arial, sans-serif;
+  font-family: "Helvetica", Arial, sans-serif;
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
   width: 50%;
   text-align: center;
 }
 
-input.check-toggle-round-flat:checked~.off {
-  color: #F36F25;
+input.check-toggle-round-flat:checked ~ .off {
+  color: #f36f25;
 }
 
-input.check-toggle-round-flat:checked~.on {
+input.check-toggle-round-flat:checked ~ .on {
   color: #fff;
 }
 
-.switch>span.on {
+.switch > span.on {
   left: 0;
   padding-left: 2px;
-  color: #F36F25;
+  color: #f36f25;
 }
 
-.switch>span.off {
+.switch > span.off {
   right: 0;
   padding-right: 4px;
   color: #fff;
@@ -72,7 +71,7 @@ input.check-toggle-round-flat:checked~.on {
   visibility: hidden;
 }
 
-.check-toggle+label {
+.check-toggle + label {
   display: block;
   position: relative;
   cursor: pointer;
@@ -83,11 +82,11 @@ input.check-toggle-round-flat:checked~.on {
   user-select: none;
 }
 
-input.check-toggle-round-flat+label {
+input.check-toggle-round-flat + label {
   padding: 2px;
   width: 97px;
   height: 35px;
-  background-color: #F36F25;
+  background-color: #f36f25;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
   -ms-border-radius: 60px;
@@ -95,25 +94,25 @@ input.check-toggle-round-flat+label {
   border-radius: 60px;
 }
 
-input.check-toggle-round-flat+label:before,
-input.check-toggle-round-flat+label:after {
+input.check-toggle-round-flat + label:before,
+input.check-toggle-round-flat + label:after {
   display: block;
   position: absolute;
   content: "";
 }
 
-input.check-toggle-round-flat+label:before {
+input.check-toggle-round-flat + label:before {
   top: 2px;
   left: 2px;
   bottom: 2px;
   right: 2px;
-  background-color: #F36F25;
+  background-color: #f36f25;
   -ms-border-radius: 60px;
   -o-border-radius: 60px;
   border-radius: 60px;
 }
 
-input.check-toggle-round-flat+label:after {
+input.check-toggle-round-flat + label:after {
   top: 4px;
   left: 4px;
   bottom: 4px;
@@ -130,25 +129,122 @@ input.check-toggle-round-flat+label:after {
   transition: margin 0.2s;
 }
 
-input.check-toggle-round-flat:checked+label {}
+input.check-toggle-round-flat:checked + label {
+}
 
-input.check-toggle-round-flat:checked+label:after {
+input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
 }
 
 button {
-  background-color: #F36F25;
-  color: black
+  background-color: #f36f25;
+  color: black;
 }
 
-input[type=text] {
+input[type="text"] {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
 label {
-  color: #B4886B;
+  color: #b4886b;
   font-weight: bold;
   display: block;
+}
+
+.glow {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  text-align: center;
+  margin: 30px auto 0;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  letter-spacing: 0.5px;
+}
+
+.glow:before {
+  content: "";
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow:active {
+  color: #000;
+}
+
+.glow:active:after {
+  background: transparent;
+}
+
+.glow:hover:before {
+  opacity: 1;
+}
+
+.glow:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.wrapper-cart {
+  display: flex;
+  flex-direction: column;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+  background-color: black !important;
+  background-image: none;
 }
